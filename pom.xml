@@ -24,6 +24,7 @@
 
     <modules>
         <module>feign-reactor-core</module>
+        <module>feign-rx2-reactor</module>
         <module>feign-reactor-fake-impl</module>
     </modules>
 
@@ -74,6 +75,7 @@
         <main.basedir>${project.basedir}</main.basedir>
 
         <reactor.version>3.1.8.RELEASE</reactor.version>
+        <reactor-adapter.version>3.1.6.RELEASE</reactor-adapter.version>
         <feign.version>9.5.1</feign.version>
         <slf4j.version>1.7.25</slf4j.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
@@ -108,9 +110,19 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-rx2-on-reactor</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-core</artifactId>
                 <version>${reactor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor.addons</groupId>
+                <artifactId>reactor-adapter</artifactId>
+                <version>${reactor-adapter.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.openfeign</groupId>

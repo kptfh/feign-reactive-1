@@ -11,7 +11,7 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package feign.reactor;
+package feign.rx2.reactor;
 
 import feign.MethodMetadata;
 import feign.Target;
